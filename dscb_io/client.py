@@ -8,7 +8,7 @@ class Client():
     def __init__(self, base_url:str):
         self.base_url = base_url
     
-    def get(self, id: int = None, query: str = None, save: bool = None):
+    async def get(self, id: int = None, query: str = None, save: bool = None):
         if id is None:
             # ID is required
             raise MissingArgument("User-ID should be provided")

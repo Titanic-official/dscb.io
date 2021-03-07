@@ -34,6 +34,7 @@ class Oauth2Client(AioClient):
             return True
         else:
             return False
+            
     @staticmethod
     async def logout():
         session.pop('DISCORD_OAUTH2_TOKEN')
